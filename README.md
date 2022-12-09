@@ -1,33 +1,25 @@
 # Octagon
 
-## Arch
-```
-octagon/
-├── app/
-│   ├── entities/
-│   │   └── user.go
-│   ├── repository/
-│   │   └── pg/
-│   │         └── user.sql
-│   ├── transport/ 
-│   │   └── http/ 
-│   │       ├── contracts.go 
-│   │       ├── handler.go
-│   │       ├── resp.go
-│   │       ├── router.go
-│   │       ├── server.go
-│   │       └── user.go
-│   └── usecase/
-│       ├── contracts.go
-│       └── user.goo
-├── cfg/
-│   ├── config.go
-│   └── config.yml
-├── cmd/
-│   └── rest/
-│       └── main.go 
-├── migration/
-│   └── migration.sql
-├── README.md
-└── .env 
-```
+Trainee project
+
+USED:
+Gorilla Mux
+GolanciLint
+MockGen
+UUID
+PostgreSQL - PQ
+SQL-migrate
+Testify
+Zap
+
+ADDED:
+Swagger openapi.yml
+Postman collection.json
+
+Makefile instructions:
+
+migration UP/DOWN: 
+make migrate up / make migrate down
+
+run application:
+make run
